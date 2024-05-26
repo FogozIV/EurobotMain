@@ -11,6 +11,5 @@ int main() {
     std::cout << size << std::endl;
     std::shared_ptr<BasePacket> basePacket = ClientBoundPingPacket::parsePacket(data);
     std:: cout << basePacket->getPacketID()<< std::endl;
-    PacketParser parser;
     return 0;
 }
